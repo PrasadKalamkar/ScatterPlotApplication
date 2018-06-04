@@ -1,0 +1,20 @@
+How to run the Application?
+1) Goto folder "ScatterPlotApp", run the command "npm install".
+2) Install "json-server" on your machine using "npm install -g json-server".
+2) Start this server using "start json-server".
+3) Goto folder "ScatterPlotApp\mockedData". You can see PlotPoints.json file. Run the command for mocked data API "json-server --watch PlotPoints.json".
+4) You can see the mocked data in browser by typing "http://localhost:3000/plotPoints".
+4) Now, run the application using "npm start". You can start viewing in the browser "http://localhost:7000" and ScatterPlot will be displayed.
+
+Brief Overview of task implementation:
+1) I have created mocked data API using "json-server" which provides data to the application.
+2) For reading data from mocked API and providing to react component, I have used redux architecture and redux-thunk middleware.
+3) For implementation of scatterPlot, I have used react-easy-chart.
+
+Possible Enhancement to the application:
+1) Since, it is coding challenge task, I have directly imported the react-easy-chart component for development. But, in real time scenario, we can use this component to create our custom component and use in our project. The reason behind this is, anytime the open source community can do the changes to original components and because of that our code will become shaky.
+2) Also, if we create our custom component, we can improve original component. For example: chart uses SVG image and style properties like stroke-width are not possible to update dynamically.
+3) We can explore more react-easy-chart for custom legend, tooltip, data types and many more chart properties.
+
+
+ 
